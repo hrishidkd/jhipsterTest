@@ -38,6 +38,9 @@ public class CacheConfiguration {
         return cm -> {
             createCache(cm, com.book.app.repository.UserRepository.USERS_BY_LOGIN_CACHE);
             createCache(cm, com.book.app.repository.UserRepository.USERS_BY_EMAIL_CACHE);
+            createCache(cm, com.book.app.domain.Author.class.getName());
+            createCache(cm, com.book.app.domain.Author.class.getName() + ".books");
+            createCache(cm, com.book.app.domain.Books.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -15,10 +15,10 @@
 
 logging:
   level:
-    ROOT: DEBUG
+    ROOT: INFO
     tech.jhipster: DEBUG
-    org.hibernate.SQL: DEBUG
-    com.book.app: DEBUG
+    org.hibernate.SQL: INFO
+    com.book.app: INFO
 
 spring:
   devtools:
@@ -56,7 +56,7 @@ spring:
     cache: false
 
 server:
-  port: 8080
+  port: 8081
 
 # ===================================================================
 # JHipster specific properties
